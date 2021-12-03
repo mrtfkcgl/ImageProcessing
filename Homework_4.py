@@ -11,8 +11,8 @@ def Padding_Image(img,paddingValue):
     print("Before padding operation values ",img.shape[0],img.shape[1])
     reflect101 = cv2.copyMakeBorder(img, paddingValue, paddingValue, paddingValue, paddingValue, cv2.BORDER_REFLECT_101)
     #reflect101 = cv2.copyMakeBorder(img, 10, 10, 10, 10, cv2.BORDER_CONSTANT, None, value=0)
-    Height = reflect101.shape[0]  # dikey kolon sayısı
-    Width = reflect101.shape[1]  # yatay satır sayısı
+    Height = reflect101.shape[0]  
+    Width = reflect101.shape[1]  
     print("Before padding operation values ", reflect101.shape[0], reflect101.shape[1])
     return reflect101
 
